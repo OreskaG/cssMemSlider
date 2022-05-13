@@ -20,6 +20,7 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    overflow: hidden;
 }
 
 .radio {
@@ -27,13 +28,13 @@ h1 {
     height: 0%;
     visibility: hidden;
     transition: 0.5s;
+    margin: 0rem;
 }
 
 .img-wrapper {
     display: flex;
     align-items: center;
     width: 50vw;
-    overflow: hidden;
     margin-bottom: 5vh;
 }
 
@@ -54,8 +55,13 @@ img {
     width: 20vw;
 }
 
+.overflow-window {
+    overflow: hidden;
+}
+
 .text {
     font-size: 1.5rem;
+    min-width: 20vw;
 }
 
 .btn-wrapper {
@@ -94,25 +100,8 @@ img {
     transition: 0.5s;
 }
 
-#radio-1:checked ~ .img-wrapper .img:nth-child(1),
-#radio-1:checked ~ .img-wrapper .img:nth-child(2),
-#radio-1:checked ~ .img-wrapper .img:nth-child(3),
-#radio-1:checked ~ .img-wrapper .img:nth-child(4) {
-    transform: translateX(0vw);
-    transition: 0.5s;
-}
-
-
 #radio-2:checked ~ .btn-wrapper .btn:nth-child(2) .btn-icon {
     background-color: yellow;
-    transition: 0.5s;
-}
-
-#radio-2:checked ~ .img-wrapper .img:nth-child(1),
-#radio-2:checked ~ .img-wrapper .img:nth-child(2),
-#radio-2:checked ~ .img-wrapper .img:nth-child(3),
-#radio-2:checked ~ .img-wrapper .img:nth-child(4) {
-    transform: translateX(-50vw);
     transition: 0.5s;
 }
 
@@ -121,23 +110,47 @@ img {
     transition: 0.5s;
 }
 
-#radio-3:checked ~ .img-wrapper .img:nth-child(1),
-#radio-3:checked ~ .img-wrapper .img:nth-child(2),
-#radio-3:checked ~ .img-wrapper .img:nth-child(3),
-#radio-3:checked ~ .img-wrapper .img:nth-child(4) {
-    transform: translateX(-100vw);
-    transition: 0.5s;
-}
-
 #radio-4:checked ~ .btn-wrapper .btn:nth-child(4) .btn-icon {
     background-color: yellow;
     transition: 0.5s;
 }
 
-#radio-4:checked ~ .img-wrapper .img:nth-child(1),
-#radio-4:checked ~ .img-wrapper .img:nth-child(2),
-#radio-4:checked ~ .img-wrapper .img:nth-child(3),
-#radio-4:checked ~ .img-wrapper .img:nth-child(4) {
+#radio-1:checked ~ .img-wrapper {
+    transform: translateX(0vw);
+    transition: 0.5s;
+}
+
+#radio-2:checked ~ .img-wrapper {
+    transform: translateX(-50vw);
+    transition: 0.5s;
+}
+
+#radio-3:checked ~ .img-wrapper {
+    transform: translateX(-100vw);
+    transition: 0.5s;
+}
+
+#radio-4:checked ~ .img-wrapper {
     transform: translateX(-150vw);
+    transition: 0.5s;
+}
+
+#radio-1:checked ~ .overflow-window .text-wrapper {
+    transform: translateX(0vw);
+    transition: 0.5s;
+}
+
+#radio-2:checked ~ .overflow-window .text-wrapper {
+    transform: translateX(-20vw);
+    transition: 0.5s;
+}
+
+#radio-3:checked ~ .overflow-window .text-wrapper {
+    transform: translateX(-40vw);
+    transition: 0.5s;
+}
+
+#radio-4:checked ~ .overflow-window .text-wrapper {
+    transform: translateX(-60vw);
     transition: 0.5s;
 }
