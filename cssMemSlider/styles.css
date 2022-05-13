@@ -1,17 +1,22 @@
 body {
-    background-color: aqua;
+    background-image: url(./src/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .wrapper {
     margin: 0% auto;
-    max-width: 60vw;
+    max-width: 35vw;
+    background-color: bisque;
     transition: 0.5s;
+    border-radius: 2rem;
+    padding-top: 3rem;
+    margin-top: 5vh;
 }
 
 h1 {
     font-size: 3rem;
     text-align: center;
-    margin-top: 5vh;
     margin-bottom: 5vh;
 }
 
@@ -53,6 +58,7 @@ img {
 .text-wrapper {
     display: flex;
     width: 20vw;
+    margin-bottom: 5vh;
 }
 
 .overflow-window {
@@ -68,12 +74,12 @@ img {
     max-width: 30%;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 5vh;
 }
 
 .btn {
-    min-height: 3vh;
+    min-height: 4vh;
     min-width: 3vw;
-    background-color: black;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -83,9 +89,9 @@ img {
 .btn-icon {
     height: 1.5vh;
     width: 1.5vw;
-    border: 0.2rem solid red;
+    border: 0.2rem solid blue;
     border-radius: 1rem;
-    background-color: red;
+    background-color: blue;
     transition: 0.5s;
 }
 
@@ -96,22 +102,22 @@ img {
 }
 
 #radio-1:checked ~ .btn-wrapper .btn:nth-child(1) .btn-icon {
-    background-color: yellow;
+    background-color: bisque;
     transition: 0.5s;
 }
 
 #radio-2:checked ~ .btn-wrapper .btn:nth-child(2) .btn-icon {
-    background-color: yellow;
+    background-color: bisque;
     transition: 0.5s;
 }
 
 #radio-3:checked ~ .btn-wrapper .btn:nth-child(3) .btn-icon {
-    background-color: yellow;
+    background-color: bisque;
     transition: 0.5s;
 }
 
 #radio-4:checked ~ .btn-wrapper .btn:nth-child(4) .btn-icon {
-    background-color: yellow;
+    background-color: bisque;
     transition: 0.5s;
 }
 
