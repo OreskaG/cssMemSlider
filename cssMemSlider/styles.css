@@ -1,3 +1,82 @@
-.body {
-    color: aqua;
+body {
+    background-color: aqua;
 }
+
+.wrapper {
+    margin: 0% auto;
+    max-width: 60vw;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.radio {
+    width: 0%;
+    height: 0%;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.text-wrapper {
+    display: flex;
+}
+
+.text {
+    font-size: 1.5rem;
+}
+
+.btn-wrapper {
+    max-width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    min-height: 3vh;
+    min-width: 3vw;
+    background-color: black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-icon {
+    height: 1.5vh;
+    width: 1.5vw;
+    border: 0.2rem solid red;
+    border-radius: 1rem;
+    background-color: red;
+    transition: 0.5s;
+}
+
+.btn:hover .btn-icon {
+    background-color: white;
+    border-color: white;
+    transition: 0.5s;
+}
+
+#radio-1:checked ~ .btn-wrapper .btn:nth-child(1) .btn-icon {
+    background-color: yellow;
+    transition: 0.5s;
+}
+
+#radio-2:checked ~ .btn-wrapper .btn:nth-child(2) .btn-icon {
+    background-color: yellow;
+    transition: 0.5s;
+}
+
+#radio-3:checked ~ .btn-wrapper .btn:nth-child(3) .btn-icon {
+    background-color: yellow;
+    transition: 0.5s;
+}
+
+#radio-4:checked ~ .btn-wrapper .btn:nth-child(4) .btn-icon {
+    background-color: yellow;
+    transition: 0.5s;
+}
+
