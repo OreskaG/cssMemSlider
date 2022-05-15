@@ -274,7 +274,7 @@ img {
 
 @media (max-width: 660px) {
     .btn-wrapper {
-        transform: translateY(-10vh);
+        transform: translateY(-13vh);
         margin-bottom: 0vh;
         width: 40vw;
     }
